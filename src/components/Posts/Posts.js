@@ -1,10 +1,15 @@
 import React from 'react';
-import Post from './Post/Post.js'
+import { useSelector } from 'react-redux';
 
+import Post from './Post/Post.js'
 import useStyles from './styles.js';
 
 const Posts = () => {
+    const posts = useSelector((state) => state.posts);
+    // eslint-disable-next-line no-unused-vars
     const classes = useStyles();
+
+    console.log(posts);
 
     return (
         <> 
@@ -12,7 +17,7 @@ const Posts = () => {
             <Post />
             <Post />
         </>
-    )
+    );
 }
 
 export default Posts;

@@ -3,6 +3,7 @@ import React from 'react';
 import useStyles from './styles.js';
 
 const Post = () => {
+    // eslint-disable-next-line no-unused-vars
     const classes = useStyles();
 
     return ( 
